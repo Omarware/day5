@@ -15,14 +15,16 @@ pw_list = list()
 for pwl in range(nr_letters): #pwl = password letters
   pw_letters = random.choice(letters)
   pw_list.append(pw_letters)
-  for pws in range(nr_symbols): #pws = password symbols
-    pw_symbols = random.choice(symbols)
-    pw_list.append(pw_symbols)
-    for pwn in range(nr_numbers): #pwn = passwod numbers
-      pw_numbers = random.choice(numbers)
-      pw_list.append(pw_numbers)
-      
-print(pw_list)
+  
+for pws in range(nr_symbols): #pws = password symbols
+  pw_symbols = random.choice(symbols)
+  pw_list.append(pw_symbols)
+  
+for pwn in range(nr_numbers): #pwn = passwod numbers
+  pw_numbers = random.choice(numbers)
+  pw_list.append(pw_numbers)
+
+print(''.join(pw_list))
 
 #Hard Level - Order of characters randomised:
 #e.g. 4 letter, 2 symbol, 2 number = g^2jk8&P
