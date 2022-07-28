@@ -32,3 +32,12 @@ print(''.join(pw_list))
 random.shuffle(pw_list)
 
 print(''.join(pw_list))
+
+#ADditional tip from Angela Yu
+
+password = ""
+
+for pw in pw_list:
+  password += pw
+
+print(f"Your password is {password}")
