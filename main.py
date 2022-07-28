@@ -28,3 +28,7 @@ print(''.join(pw_list))
 
 #Hard Level - Order of characters randomised:
 #e.g. 4 letter, 2 symbol, 2 number = g^2jk8&P
+
+random.shuffle(pw_list)
+
+print(''.join(pw_list))
